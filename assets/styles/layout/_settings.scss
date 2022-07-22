@@ -11,7 +11,7 @@ $font1: Inter-ExtraB, sans-serif;
 $font2: Merri-light, serif;
 $black1: rgb(17, 17, 17);
 $white1: rgb(243, 243, 243);
-$grey: rgb(209, 209, 209);
+$grey1: rgb(209, 209, 209);
 $grey2: rgb(233, 233, 233);
 $grey3: rgb(105, 105, 105);
 
@@ -81,6 +81,5 @@ body {
 
   &:hover {
     transform: scale(1.05);
-    color: $white1;
   }
 }
