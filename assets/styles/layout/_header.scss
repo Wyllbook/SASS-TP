@@ -1,0 +1,45 @@
+header {
+  color: $white1;
+  position: relative;
+
+  min-height: 100vh;
+
+  .header-content {
+    @include flexCenter;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: headerAnim 1.5s forwards;
+    opacity: 0;
+    transform: translateY(40px);
+
+    @keyframes headerAnim {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    h1 {
+      @include title;
+      font-size: 4rem;
+      letter-spacing: 6px;
+    }
+    p {
+      margin: 40px auto 60px;
+      font-style: italic;
+      width: 85%;
+    }
+    span {
+      border: 2px solid $white1;
+      border-radius: 50px;
+      height: 60px;
+      width: 60px;
+      font-size: 1.2rem;
+      @include flexCenter;
+    }
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(219, 219, 219, 0.253);
+  }
+}
